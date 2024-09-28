@@ -1,0 +1,112 @@
+<html>
+ <head>
+  <title>
+   PlateShare
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&display=swap" rel="stylesheet"/>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+        .navbar .logo h1 {
+            margin: 0;
+            font-size: 36px; /* Increased font size */
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin-top: 80px; /* Adjusted for fixed navbar */
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .text {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            font-weight: bold;
+            opacity: 0;
+            transition: top 1s ease-out, opacity 1s ease-out;
+        }
+        .hero .text.visible {
+            top: 50%;
+            opacity: 1;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="logo">
+    <img alt="PlateShare Logo" height="50" src="logo.jpg" width="50"/>
+    <h1>
+     PlateShare
+    </h1>
+   </div>
+   <div class="menu">
+    <a href="#">
+     Home
+    </a>
+    <a href="login.html">
+     Login
+    </a>
+    <a href="donate.html" style="margin-right: 20px;">
+     Donate
+    </a>
+   </div>
+  </div>
+  <div class="hero">
+   <img alt="Children eating food with volunteers" height="1080" src="indeximg.jpg" width="1920"/>
+   <div class="text">
+    Turning Extra Into Enough!
+   </div>
+  </div>
+  <script>
+    window.addEventListener('load', function() {
+        document.querySelector('.hero .text').classList.add('visible');
+    });
+  </script>
+ </body>
+</html>

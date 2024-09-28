@@ -1,0 +1,280 @@
+<html>
+ <head>
+    <script src="cities.js"></script>
+  <title>
+   Help Those in Extreme Poverty
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@700&display=swap');
+   
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        .header h1 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .header h2 {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group .checkbox-label {
+            font-size: 14px;
+            color: #333;
+        }
+        .form-group .checkbox-label .fa-question-circle {
+            margin-left: 5px;
+            color: #999;
+        }
+        .form-group .checkbox-label .fa-question-circle:hover {
+            color: #333;
+        }
+        .form-group .phone-input {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .phone-input input {
+            flex: 1;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group .phone-input .fa-question-circle {
+            margin-left: 10px;
+            color: #999;
+        }
+        .form-group .phone-input .fa-question-circle:hover {
+            color: #333;
+        }
+        .form-group .city-state {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .city-state select {
+            width: 48%;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .top-bar img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .top-bar h2 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+  </style>
+  <style>
+    body, html {
+             margin: 0;
+             padding: 0;
+             font-family: Arial, sans-serif;
+         }
+         .navbar {
+             background-color: #006400;
+             color: white;
+             padding: 10px 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             position: fixed;
+             width: 100%;
+             top: 0;
+             z-index: 1000;
+         }
+         .navbar .logo {
+             display: flex;
+             align-items: center;
+         }
+         .navbar .logo img {
+             height: 50px;
+             width: 50px;
+             margin-right: 10px;
+         }
+         .navbar .logo h1 {
+             margin: 0;
+             font-size: 36px; /* Increased font size */
+             font-family: 'Times New Roman', serif;
+             font-style: italic;
+             font-weight: bold;
+         }
+         .navbar .menu {
+             display: flex;
+             gap: 20px;
+         }
+         .navbar .menu a {
+             color: white;
+             text-decoration: none;
+             font-size: 18px;
+         }
+         .navbar .menu a:hover {
+             text-decoration: underline;
+         }
+        
+   </style>
+ </head>
+ <body>
+    <div class="navbar">
+        <div class="logo">
+         <img alt="PlateShare Logo" height="50" src="logo.jpg" width="50"/>
+         <h1>
+          PlateShare
+         </h1>
+        </div>
+        <div class="menu">
+         <a href="#">
+          Home
+         </a>
+         <a href="login.html">
+          Login
+         </a>
+         <a href="donate.html" style="margin-right: 20px;">
+          Donate
+         </a>
+        </div>
+       </div>
+  <div class="container">
+   <div class="top-bar">
+    <img alt="PlateShare logo" height="60" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-2mPIPjPdNg2bZmeExL9Odl6V.png?st=2024-09-28T04%3A42%3A31Z&amp;se=2024-09-28T06%3A42%3A31Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-28T00%3A46%3A19Z&amp;ske=2024-09-29T00%3A46%3A19Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=%2BuoUcvrFEc4zN5irw5dVGeFLYfGBiqNiai%2BlxavA%2BUo%3D" width="60"/>
+    <h2>
+     PlateShare
+    </h2>
+   </div>
+   <div class="header">
+    <img alt="Food for the Poor logo and certification logos" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-1R5UgZWQrBJDvGaoLcLTmhuN.png?st=2024-09-28T04%3A29%3A53Z&amp;se=2024-09-28T06%3A29%3A53Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-28T01%3A12%3A35Z&amp;ske=2024-09-29T01%3A12%3A35Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5ry/j0FWA9VxHodTyrF7vQ0pWjstFN87oK0oSgJf/1U%3D" width="400"/>
+    <h1>
+     Turning Extra Into Enough!
+    </h1>
+    <div class="divider"></div>
+    <h2>
+     Enter your details
+    </h2>
+   </div>
+   <div class="form-group">
+    <label for="first-name">
+     First name
+    </label>
+    <input id="first-name" placeholder="First name" required="" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="last-name">
+     Last name
+    </label>
+    <input id="last-name" placeholder="Last name" required="" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="email">
+     Email address
+    </label>
+    <input id="email" placeholder="Email address" required="" type="email"/>
+   </div>
+   <div class="form-group">
+    <label for="phone">
+     Contact Number
+    </label>
+    <div class="phone-input">
+     <input id="phone" placeholder="Contact Number" required="" type="tel"/>
+     <i class="fas fa-question-circle">
+     </i>
+    </div>
+   </div>
+   <div class="form-group">
+    <label for="address">
+     Address
+    </label>
+    <textarea id="address" placeholder="Address" required="" rows="2"></textarea>
+   </div>
+   <div class="form-group city-state">
+    <div>
+     <label for="state">
+      State
+     </label>
+     <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>
+<select id ="state" class="form-control" required></select>
+<script language="javascript">print_state("sts");</script>
+   <div class="form-group">
+    <label for="ngo-name">
+     Name of any specific NGO (Optional)
+    </label>
+    <input id="ngo-name" placeholder="Name of any specific NGO (Optional)" type="text"/>
+   </div>
+   <button class="btn">
+    Continue
+   </button>
+  </div>
+ </body>
+</html>
